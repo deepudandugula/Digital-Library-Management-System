@@ -1,0 +1,48 @@
+GET http://localhost:3000/books/
+###
+
+GET http://localhost:3000/books/3/
+###
+
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+  "title": "Harry The Great Story",
+  "author_id": 1,
+  "rating": 4.38,
+  "rating_count": 7474819,
+  "review_count": 112312,
+  "description": "Harry Potters life is miserable. His parents are dead and hes stuck with his heartless relatives.",
+  "pages": 109,
+  "date_of_publication": "July 1st 2003",
+  "edition_language": "English",
+  "price": 650,
+  "online_stores": "Audible,Google play, Indigo,Abebooks"
+}
+###
+
+PUT http://localhost:3000/books/3/
+Content-Type: application/json
+
+{
+  "title": "Harry Potter and Full of Secrets",
+  "author_id": 1,
+  "rating": 4.53,
+  "rating_count": 2579372,
+  "review_count": 59139,
+  "description": "Ever since Harry Potter had come home for the winter.",
+  "pages": 341,
+  "date_of_publication": "July 8th 1997",
+  "edition_language": "English",
+  "price": 450,
+  "online_stores": "Amazon, Google play, Indigo,Abebooks"
+}
+###
+
+DELETE http://localhost:3000/books/23/
+Content-Type: application/json
+###
+
+GET http://localhost:3000/authors/2/books/
+Content-Type: application/json

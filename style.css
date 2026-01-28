@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  } 
+  .nav-image1{
+    height: 50px;
+    width: 130px;
+    padding-left: 15px;
+    background-size: cover;
+  }
+  .nav-heading{
+    color: rgb(240, 115, 14);
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 20px;
+  }
+  .navbar{
+    font-weight: bold;
+    color: white;
+  }
+  
+  .form-title{
+    color: rgb(237, 225, 225);
+    padding-top: 20px;
+  }
+  .home-para{
+    color: #030303;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    padding-left: 35px;
+    padding-top: 15px;
+  }
+  .home-section{
+    background-image: url("https://res.cloudinary.com/dhxpk8mls/image/upload/v1768224662/Screenshot_2026-01-12_190029_imvakn.png");
+    background-size: cover; 
+    height: 90%;
+    width: 100vw;
+    padding-top: 10px;
+    background-position: center;
+  }
+  .home-img{
+    height: 80vh;
+    width: 75%;
+    background-size: cover;
+    order: 1;
+  }
+  .heading-title{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lucida Sans';
+    font-style: italic;
+    color: rgba(59, 2, 16, 0.927);
+    padding-top: 25px;
+    font-weight: bold;
+  }
+  .navbar {
+    background-image: url("https://res.cloudinary.com/dhxpk8mls/image/upload/v1768224661/Screenshot_2026-01-12_185942_vzojtd.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 2px;
+  }  
+  .heading-title span {
+    color: #7c9bb4;
+  }
+  
+  .form-section {
+    background-image: url("https://res.cloudinary.com/dhxpk8mls/image/upload/v1767966136/Blue_Yellow_10_Awesome_Books_That_Changed_My_Mindset_Youtube_Thumbnail_a4rrp6.png");
+    padding: 20px;
+    margin: 15px;
+    border-radius: 16px;
+  }
+  .temples-section{
+    background-image: url("https://res.cloudinary.com/dhxpk8mls/image/upload/v1768261175/411dd136e7565c667837d9561302b7b8_b3qe7t.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .temples-title {
+    font-family: "Inria Serif";
+    font-size: 42px;
+    color: rgba(59, 2, 16, 0.927);
+    font-weight: bolder;
+    text-align: left;
+  }
+  
+  .main-temple-img {
+    border-radius: 10px;
+    max-height: 280px;
+    min-width: 300px;
+  }
+  
+  .temple-name {
+    font-family: "Inria Serif";
+    font-size: 28px;
+    color: #131212;
+    font-weight: 700;
+  }
+  .temple-name span {
+    color: #8a5050;
+    font-style: italic;
+    font-family: "Inria Serif";
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .temple-description {
+    font-size: 16px;
+    color: #474444;
+    text-align: center;
+    font-family: "Inria Serif";
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .temple-card {
+    background-color: #777472;
+    border-radius: 15px;
+    height: 95%;
+    width: 85%;
+    opacity: 85%;
+    cursor: pointer;
+  }
+  
+  .temple-card-img {
+    border-radius: 10px;
+    height: 65%;
+    width: 80%;
+    opacity: 100%;
+    padding-top: 8px;
+  }
+  
+  .temple-location {
+    color: #7e3b3b;
+    font-style: italic;
+    font-family: "Inria Serif";
+    font-style: normal;
+    font-weight: bold;
+  }
+  .temple-names{
+    font-size: 15px;
+    font-family: "Inria Serif";
+    color: black;
+    font-weight: bold;
+  }
+  
+  .view-more-link {
+    color: #3b2f2f;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .view-more-link:hover {
+    text-decoration: underline;
+  }
+
+  .form-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+  }
+  
+  .form-section button {
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /*.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+  } */
+  .books-container {
+    display: flex;
+    flex-wrap: wrap;   /* allow cards to wrap to next line */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    .book-card {
+      width: 100%;
+    }
+  }
+  .filter-section {
+    display: flex;
+    gap: 10px;
+    padding: 0 20px 20px;
+  }
+  
+  .filter-section input,
+  .filter-section select {
+    padding: 10px;
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    .filter-section {
+      flex-direction: column;
+    }
+  }
+  
+  .error-msg {
+    color: red;
+    margin-bottom: 10px;
+  }
+
+  input.error {
+    border: 1px solid red;
+  }
+
+  .book-card {
+    width: 550px; /* card width */
+    border: 0px solid #0d1329;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    display: flex; /* side by side cards if needed */
+    background-image: linear-gradient(to bottom, rgb(93, 111, 119), rgb(245, 245, 222), rgb(151, 217, 246));
+  }
+
+  .book-card-content {
+    display: flex; /* image and details side by side */
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%; 
+    gap: 16px;
+  }
+
+  .book-image {
+    width: 120px; /* fixed width */
+    height: 180px; /* fixed height */
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px;  
+    box-shadow: #2c3e50;
+  }
+
+  .book-details {
+    flex: 1; /* take remaining space */
+  }
+
+  .book-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+  }
+  .description {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+  }
+  .book-details p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .book-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .book-actions button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  
